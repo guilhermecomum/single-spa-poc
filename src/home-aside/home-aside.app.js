@@ -3,15 +3,11 @@ import ReactDOM from "react-dom";
 import singleSpaReact from "single-spa-react";
 import App from "./root.component.js";
 
-function domElementGetter() {
-  return document.getElementById("container");
-}
-
 const reactLifecycles = singleSpaReact({
   React,
   ReactDOM,
   rootComponent: App,
-  domElementGetter
+  domElementGetter: () => document.getElementById("container")
 });
 
 export const bootstrap = [reactLifecycles.bootstrap];

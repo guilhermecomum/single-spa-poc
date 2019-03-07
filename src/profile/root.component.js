@@ -11,6 +11,12 @@ class App extends Component {
           <li>followers</li>
           <li>following</li>
         </ul>
+        <a
+          className="waves-effect waves-light btn"
+          onClick={() => window.dispatchEvent(new Event("followUser"))}
+        >
+          Follow!
+        </a>
       </div>
     );
   }
