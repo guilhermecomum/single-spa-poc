@@ -4,7 +4,7 @@ import singleSpaReact from "single-spa-react";
 import Home from "./root.component.js";
 
 function domElementGetter() {
-  return document.getElementById("main");
+  return document.getElementById("container");
 }
 
 const reactLifecycles = singleSpaReact({

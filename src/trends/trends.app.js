@@ -1,16 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import singleSpaReact from "single-spa-react";
-import Home from "./root.component.js";
+import App from "./root.component.js";
 
 function domElementGetter() {
-  return document.getElementById("main");
+  return document.getElementById("trends");
 }
 
 const reactLifecycles = singleSpaReact({
   React,
   ReactDOM,
-  rootComponent: Home,
+  rootComponent: App,
   domElementGetter
 });
 

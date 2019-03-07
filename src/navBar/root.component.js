@@ -3,7 +3,7 @@ import { navigateToUrl } from "single-spa";
 
 const NavBar = () => (
   <nav>
-    <div className="nav-wrapper">
+    <div className="nav-wrapper container">
       <a href="/" onClick={navigateToUrl} className="brand-logo">
         single-spa
       </a>
@@ -14,8 +14,8 @@ const NavBar = () => (
           </a>
         </li>
         <li>
-          <a href="/angularJS" onClick={navigateToUrl}>
-            AngularJS
+          <a href="/about" onClick={navigateToUrl}>
+            About
           </a>
         </li>
       </ul>
